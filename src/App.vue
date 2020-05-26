@@ -1,11 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       color="primary"
       dark
-    >
-      <v-spacer />
+    > -->
+    <AppBar />
+      <!-- <v-spacer />
       <v-btn
         text
       >
@@ -14,7 +15,7 @@
         <span class="ml-1 hidden-md-and-up">DDR Scroll Speed Checker</span>
       </v-btn>
       <v-spacer />
-    </v-app-bar>
+    </v-app-bar> -->
 
     <v-content>
       <ScrollCalculateForm />
@@ -24,12 +25,14 @@
 
 <script>
 import ScrollCalculateForm from './components/ScrollCalculateForm.vue';
+import AppBar from './components/AppBar.vue';
 
 export default {
   name: 'App',
 
   components: {
     ScrollCalculateForm,
+    AppBar,
   },
 };
 </script>

@@ -1,0 +1,14 @@
+{
+  "menus": [
+    {
+      "menuName": "스크롤 속도계산",
+      "route": "/scrollSpeedCalculation",
+      "menuIcon": "mdi-gauge"
+    },
+    {
+      "menuName": "스킬어택 검색",
+      "route": "/saSearch",
+      "menuIcon": "mdi-magnify"
+    }
+  ]
+}
