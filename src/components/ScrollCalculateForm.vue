@@ -117,21 +117,6 @@ export default {
       }
       this.slowBpmCal = this.slowMul * this.songBpm - this.myScrollBpm;
       this.fastBpmCal = this.fastMul * this.songBpm - this.myScrollBpm;
-
-      // await axios.get(`https://wx2hjouhrd.execute-api.ap-northeast-2.amazonaws.com/dev/${this.myScrollBpm}/${this.songBpm}/${this.isPremium}`)
-      //   .then((response) => {
-      //     if (response.data.result.fast.speedMul < response.data.result.slow.speedMul) {
-      //       this.fastMul = response.data.result.fast.speedMul;
-      //       this.slowMul = response.data.result.slow.speedMul;
-      //       this.fastBpmCal = response.data.result.fast.bpmCal;
-      //       this.slowBpmCal = response.data.result.slow.bpmCal;
-      //     } else {
-      //       this.fastMul = response.data.result.slow.speedMul;
-      //       this.slowMul = response.data.result.fast.speedMul;
-      //       this.fastBpmCal = response.data.result.slow.bpmCal;
-      //       this.slowBpmCal = response.data.result.fast.bpmCal;
-      //     }
-      //   });
     },
   },
 };
