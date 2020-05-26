@@ -45,6 +45,6 @@ export default {
 
 <style lang="scss" scoped>
 .v-navigation-drawer {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 </style>
