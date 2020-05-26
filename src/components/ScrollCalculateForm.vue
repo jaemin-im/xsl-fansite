@@ -5,7 +5,7 @@
         <v-text-field type="number" v-model="myScrollBpm" label="본인의 스크롤 속도" outlined />
       </v-col>
     </v-row>
-    <v-row class="mt-n8">
+    <v-row class="mt-n10">
       <v-col>
         <v-text-field type="number" v-model="songBpm" label="곡의 BPM" outlined />
       </v-col>
@@ -15,12 +15,12 @@
         <v-switch v-model="isPremium" inset :label="`프리미엄 모드 여부: ${isPremium}`" />
       </v-col>
     </v-row>
-    <!-- <v-row class="mt-n6">
+    <v-row class="mt-n6">
       <v-col class="d-flex justify-center">
         <v-btn tile block outlined color="primary" @click="calculateSpeed">속도 계산</v-btn>
       </v-col>
-    </v-row> -->
-    <v-row class="mt-n4">
+    </v-row>
+    <v-row>
       <v-col class="d-flex justify-center mb-1">
         <v-progress-circular
           :size="200"
@@ -50,8 +50,6 @@
 </template>
 
 <script>
-// import axios from 'axios';
-
 export default {
   name: 'ScrollCalculateForm',
   data: () => ({
@@ -63,17 +61,6 @@ export default {
     slowMul: null,
     slowBpmCal: null,
   }),
-  watch: {
-    isPremium() {
-      this.calculateSpeed();
-    },
-    myScrollBpm() {
-      this.calculateSpeed();
-    },
-    songBpm() {
-      this.calculateSpeed();
-    },
-  },
   methods: {
     async calculateSpeed() {
       if (this.isPremium) {
