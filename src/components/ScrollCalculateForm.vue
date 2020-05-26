@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div>
     <v-row class="text-center">
       <v-col>
         <v-text-field type="number" v-model="myScrollBpm" label="본인의 스크롤 속도" outlined />
@@ -46,7 +46,7 @@
         </v-progress-circular>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
