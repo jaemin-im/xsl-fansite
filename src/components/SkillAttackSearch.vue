@@ -68,10 +68,11 @@ export default {
         )
         .then((response) => {
           if (response) {
-            this.ddrNick = response.ddr_nick;
-            this.ddrSkillPoint = response.skill_point;
-            this.saUpdatedAt = response.update_date;
-            const tempRank = Number(this.ddrSkillPoint) / 100 - 5;
+            this.ddrNick = response.data.ddr_nick;
+            this.ddrSkillPoint = response.data.skill_point;
+            this.saUpdatedAt = response.data.update_date;
+            const tempRank = parseInt(Number(this.ddrSkillPoint) / 100 - 5, 10);
+            console.log(tempRank);
             try {
               this.rankColor = `${this.rankColors[tempRank]}--text`;
               this.saRank = this.rankTitles[tempRank];
