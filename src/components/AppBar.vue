@@ -3,7 +3,7 @@
     <v-app-bar app color="primary" dark>
       <v-app-bar-nav-icon v-on:click.stop="drawer = !drawer" />
       <v-spacer />
-      <v-btn text>
+      <v-btn text link to="/">
         <v-icon>mdi-arrow-all</v-icon>
         <span class="ml-1 hidden-sm-and-down">DanceDanceRevolution XSOLUTE. Fansite</span>
         <span class="ml-1 hidden-md-and-up">DDR XSL. Fansite</span>
